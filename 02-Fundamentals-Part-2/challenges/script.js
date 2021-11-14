@@ -90,3 +90,18 @@ for (i = 0; i < aBills.length; i++) {
 }
 
 console.debug(aBills, aTips, aTotals);
+
+//challange #4
+const data1 = [17, 21, 23],
+  data2 = [12, 5, -5, 0, 4];
+
+const printForecast = (arr) => {
+  let comm = "";
+  for (i = 0; i < arr.length; i++)
+    comm += `${arr[i]}st. C in ${i + 1}days
+  `;
+  console.log(comm);
+};
+
+printForecast(data1);
+printForecast(data2);
