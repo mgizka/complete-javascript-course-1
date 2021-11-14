@@ -28,3 +28,20 @@ const checkWinner = (dolhins, koalas) => {
 
 console.log("Scenario[1]: " + checkWinner([44, 23, 71], [65, 54, 49]));
 console.log("Scenario[2]: " + checkWinner([85, 54, 41], [23, 34, 27]));
+
+//c
+function tipCalc(bill) {
+  return bill > 50 && bill < 300 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills = [275, 40, 430];
+const tips = [];
+const totals = [];
+
+for (i = 0; i < bills.length; i++) {
+  tips[i] = tipCalc(bills[i]);
+  totals[i] = tips[i] + bills[i];
+  console.log(`tip is ${tips[i]} for bill ${bills[i]}`);
+}
+
+console.log(totals, bills, tips);
