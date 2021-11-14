@@ -29,7 +29,7 @@ const checkWinner = (dolhins, koalas) => {
 console.log("Scenario[1]: " + checkWinner([44, 23, 71], [65, 54, 49]));
 console.log("Scenario[2]: " + checkWinner([85, 54, 41], [23, 34, 27]));
 
-//c
+//challenge #2
 function tipCalc(bill) {
   return bill > 50 && bill < 300 ? bill * 0.15 : bill * 0.2;
 }
@@ -45,3 +45,25 @@ for (i = 0; i < bills.length; i++) {
 }
 
 console.log(totals, bills, tips);
+
+//challange #3
+
+const bmiMark = {
+    fullName: "Mark Miller",
+    heigth: 1.69,
+    mass: 78,
+    bmi: function () {
+      return Math.round(this.mass / (this.heigth * 2));
+    },
+  },
+  bmiJohn = {
+    fullName: "John Smith",
+    heigth: 1.95,
+    mass: 92,
+    bmi: function () {
+      return Math.round(this.mass / (this.heigth * 2));
+    },
+  };
+
+console.log(bmiMark.bmi());
+console.log(bmiJohn.bmi());
