@@ -67,3 +67,26 @@ const bmiMark = {
 
 console.log(bmiMark.bmi());
 console.log(bmiJohn.bmi());
+
+//challange #4
+const arrBills = [];
+
+for (i = 0, len = 10; i < len; i++) {
+  arrBills[i] = Math.round(300 * Math.random());
+}
+console.log(arrBills);
+
+const aBills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+function tipCalc(bill) {
+  return bill > 50 && bill < 300 ? bill * 0.15 : bill * 0.2;
+}
+const aTips = [],
+  aTotals = [];
+
+for (i = 0; i < aBills.length; i++) {
+  aTips[i] = tipCalc(aBills[i]);
+  aTotals[i] = aTips[i] + aBills[i];
+}
+
+console.debug(aBills, aTips, aTotals);
