@@ -97,9 +97,7 @@ const data1 = [17, 21, 23],
 
 const printForecast = (arr) => {
   let comm = "";
-  for (i = 0; i < arr.length; i++)
-    comm += `${arr[i]}st. C in ${i + 1}days
-  `;
+  for (i = 0; i < arr.length; i++) comm += `${arr[i]}st. C in ${i + 1}days, `;
   console.log(comm);
 };
 
