@@ -1,12 +1,14 @@
+'use strict';
+
 //challenge #1
 
-const calcAvarage = (args) => {
+const calcAvarage = args => {
   let result = 0;
   for (i = 0; i < args.length; i++) result += args[i];
 
   return result / args.length;
 };
-const calcTotal = (args) => {
+const calcTotal = args => {
   let result = 0;
   for (i = 0; i < args.length; i++) result += args[i];
 
@@ -26,8 +28,8 @@ const checkWinner = (dolhins, koalas) => {
     : `Draw: (${totalKoalas} vs. ${totalDolphins})`;
 };
 
-console.log("Scenario[1]: " + checkWinner([44, 23, 71], [65, 54, 49]));
-console.log("Scenario[2]: " + checkWinner([85, 54, 41], [23, 34, 27]));
+console.log('Scenario[1]: ' + checkWinner([44, 23, 71], [65, 54, 49]));
+console.log('Scenario[2]: ' + checkWinner([85, 54, 41], [23, 34, 27]));
 
 //challenge #2
 function tipCalc(bill) {
@@ -49,7 +51,7 @@ console.log(totals, bills, tips);
 //challange #3
 
 const bmiMark = {
-    fullName: "Mark Miller",
+    fullName: 'Mark Miller',
     heigth: 1.69,
     mass: 78,
     bmi: function () {
@@ -57,7 +59,7 @@ const bmiMark = {
     },
   },
   bmiJohn = {
-    fullName: "John Smith",
+    fullName: 'John Smith',
     heigth: 1.95,
     mass: 92,
     bmi: function () {
@@ -95,8 +97,8 @@ console.debug(aBills, aTips, aTotals);
 const data1 = [17, 21, 23],
   data2 = [12, 5, -5, 0, 4];
 
-const printForecast = (arr) => {
-  let comm = "";
+const printForecast = arr => {
+  let comm = '';
   for (i = 0; i < arr.length; i++) comm += `${arr[i]}st. C in ${i + 1}days, `;
   console.log(comm);
 };
