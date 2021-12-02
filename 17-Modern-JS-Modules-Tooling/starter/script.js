@@ -1,4 +1,4 @@
-'use strict';
+('use strict');
 
 function fetchDocument(doc) {
   fetch(doc)
@@ -18,4 +18,7 @@ function fetchDocument(doc) {
 
 const doc =
   'https://myopensearchbucket.s3.eu-central-1.amazonaws.com/TMF621_Trouble_Ticket_API_REST_Specification_R19.0.1.docx';
+//`https://myopensearchbucket.s3.eu-central-1.amazonaws.com/Folders101.pdf`;
 fetchDocument(doc);
+
+window.open('https://docs.google.com/viewer?url=' + doc);
